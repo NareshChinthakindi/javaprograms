@@ -7,7 +7,9 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
@@ -23,7 +25,8 @@ public class Employee implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	
+	@Id
+	@Column
 	private Integer id;
 	private String firstName;
 	private String lastName;
